@@ -1,74 +1,54 @@
 import styled from 'styled-components';
 import { VscArrowSmallRight } from 'react-icons/vsc';
 import { VscArrowSmallDown } from 'react-icons/vsc';
+import desktopImage from '../../images/HeroImageDesktop.jpeg'; 
 
 export const HeroContainer =styled.div`
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 800px;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-
-
+    background-color: #F9F7EF;
 `
-
 export const HeroBackground = styled.div`
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    //overflow: hidden;
-`
-
-export const HeroImage = styled.div`
-    padding: 0;
-    display: block;
-    margin: 0 auto;
-    max-height: 100%;
-    max-width: 100%;
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+    background: url(${desktopImage}) no-repeat center;
+    background-size: cover;
 `
 
 export const HeroContent = styled.div`
-    z-index: 3;
-    max-width: 1200px;
+    text-align: center;
     position: absolute;
-    padding: 8px 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F9F7EF; 
 `
 
-export const HeroH1 = styled.h1`
-    color: #E27D60
-    font-size: 48px;
-    text-align: center;
-    color: #F9F7EF;
+export const HeroHeading = styled.p`
+    font-size: 40px;
 
-    @media screen and (max-width: 768px){
-        font-size: 40px;  
+    @media screen and (max-width: 760px){
+        font-size: 35px; 
     }
 
     @media screen and (max-width: 480px){
-        font-size: 32px;  
-    }
+        font-size: 30px;  
+    }  
 `
 
 export const HeroBtnWrapper = styled.div`
-    margin-top: 32px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 `
 
 export const ArrowRight = styled(VscArrowSmallRight)`
-    margin-left: 4px;
+    transform: translate(-10%, 33%);
     font-size: 2rem;
 `
 
 export const ArrowDown = styled(VscArrowSmallDown)`
-    margin-left: 8px;
+    transform: translate(-10%, 33%);    
     font-size: 2rem;    
 `
 

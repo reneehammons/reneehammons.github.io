@@ -15,9 +15,9 @@ export const Nav = styled.div`
     z-index: 10;
 
     
-    @media screen and (max-width: 960px){
+   /* @media screen and (max-width: 960px){
         transition: 0.8s all ease;
-    } 
+    } */
 `;
 //Nav will trigger the transtion at 960px screen size
 
@@ -26,7 +26,7 @@ export const NavbarContainer = styled.div`
     justify-content: flex-start;
     height: 80px;
     z-index: 1;
-    max-width: 1100px;
+    //max-width: 1100px;
     width: 100%;
     padding: 0 24px;
 `;

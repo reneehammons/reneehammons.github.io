@@ -1,16 +1,15 @@
 import React, {useState} from 'react';
-import Image from '../../images/HeroImage.jpeg';
 import {
     HeroContainer,
     HeroBackground,
-    HeroImage,
     HeroContent,
-    HeroH1,
+    HeroHeading,
     HeroBtnWrapper,
     ArrowRight,
     ArrowDown
 } from './HeroElements';
 import { Button } from '../ButtonElement';
+
 
 const HeroSection = () => {
     const [hover, setHover] = useState(false);
@@ -21,14 +20,10 @@ const HeroSection = () => {
 
     return (
         <HeroContainer>
-            <HeroBackground>
-                <HeroImage>
-                    <img src={Image} alt="Me in Vancouver" />
-                </HeroImage>
-            </HeroBackground>
+            <HeroBackground></HeroBackground>
             <HeroContent>
-                <HeroH1>Hello, I'm <span style={{color: '#E27D60'}}>Renee Hammons</span>.</HeroH1>
-                <HeroH1>I'm a front-end web developer.</HeroH1>
+                <HeroHeading>Hello, I'm <span style={{color: '#E27D60'}}>Renee Hammons</span>.</HeroHeading>
+                <HeroHeading>I'm a front-end web developer.</HeroHeading>
                 <HeroBtnWrapper>
                     <Button to="viewwork" onMouseEnter={onHover} onMouseLeave={onHover}>
                         View my work {hover ? <ArrowDown /> : <ArrowRight /> }
