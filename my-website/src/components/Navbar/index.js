@@ -1,24 +1,83 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {
     Nav, 
     NavbarContainer,  
     MobileIcon, 
     NavMenu,  
-    NavLinks
+    NavLink
 } from './NavbarElements';
 import { FaBars } from 'react-icons/fa';
+import { Link } from "react-scroll";
+
 
 const NavBar = ({ toggle }) => {
+    const [navColor,setNavColor] = useState(false);
+
+    const setNavColorDark = () =>{
+        setNavColor(false)
+    }
+
+    const setNavColorLight = () =>{
+        setNavColor(true)
+    }
+
+    const scrollNavColor = () => {
+        if (window.scrollY >= 1300){
+            setNavColor(true)
+        } else {
+            setNavColor(false)
+        }
+    }
+
+    useEffect(()=> {
+        window.addEventListener('scroll', scrollNavColor)
+    },[]) 
+
     return (
         <>
-            <Nav>
+            <Nav navColorChange={navColor}>
                 <NavbarContainer>
                     <NavMenu>
-                        <NavLinks to="home">Home</NavLinks>
-                        <NavLinks to="about">About</NavLinks>
-                        <NavLinks to="projects">Projects</NavLinks>
-                        <NavLinks to="resume">Resume</NavLinks>
-                        <NavLinks to="contact">Contact</NavLinks>
+                        <NavLink to="home"
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            exact='true' 
+                            offset={-60}
+                            onClick={setNavColorDark}
+                        >Home</NavLink>
+                        <NavLink to="about"
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            exact='true' 
+                            offset={-50}
+                            onClick={setNavColorDark}
+                        >About</NavLink>
+                        <NavLink to="projects"
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            exact='true' 
+                            offset={-80}
+                            onClick={setNavColorLight}
+                        >Projects</NavLink>
+                        <NavLink to="resume"
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            exact='true' 
+                            offset={-80}
+                            onClick={setNavColorLight}
+                        >Resume</NavLink>
+                        <NavLink to="contact"
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            exact='true' 
+                            offset={-80}
+                            onClick={setNavColorLight}
+                        >Contact</NavLink>
                     </NavMenu>
                     <MobileIcon onClick={toggle}>
                         <FaBars />

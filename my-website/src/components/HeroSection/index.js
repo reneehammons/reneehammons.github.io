@@ -8,7 +8,7 @@ import {
     ArrowRight,
     ArrowDown
 } from './HeroElements';
-import { Button } from '../ButtonElement';
+import { Button } from '../ButtonElements';
 
 
 const HeroSection = () => {
@@ -19,13 +19,24 @@ const HeroSection = () => {
     }
 
     return (
-        <HeroContainer>
+        <HeroContainer id="home">
             <HeroBackground></HeroBackground>
             <HeroContent>
-                <HeroHeading>Hello, I'm <span style={{color: '#E27D60'}}>Renee Hammons</span>.</HeroHeading>
+                <HeroHeading>
+                    Hello, I'm 
+                    <span style={{color: '#E27D60'}}> Renee Hammons. </span>
+                </HeroHeading>
                 <HeroHeading>I'm a front-end web developer.</HeroHeading>
                 <HeroBtnWrapper>
-                    <Button to="viewwork" onMouseEnter={onHover} onMouseLeave={onHover}>
+                    <Button 
+                        to="projects" 
+                        onMouseEnter={onHover} 
+                        onMouseLeave={onHover}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact="true"
+                        offset={-30}>
                         View my work {hover ? <ArrowDown /> : <ArrowRight /> }
                     </Button>
                 </HeroBtnWrapper>

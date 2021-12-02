@@ -3,7 +3,8 @@ import { Link as LinkScroll } from 'react-scroll';
 
 
 export const Nav = styled.div`
-    background: #41B3A3;
+    background: #108A69;
+    background: ${({navColorChange}) => (navColorChange ? '#41B3A3': '#108A69')}; 
     height: 60px;
     /* margin-top: -80px; */
     display: flex;
@@ -18,7 +19,7 @@ export const Nav = styled.div`
    /* @media screen and (max-width: 960px){
         transition: 0.8s all ease;
     } */
-`;
+`
 //Nav will trigger the transtion at 960px screen size
 
 export const NavbarContainer = styled.div`
@@ -26,10 +27,9 @@ export const NavbarContainer = styled.div`
     justify-content: flex-start;
     height: 80px;
     z-index: 1;
-    //max-width: 1100px;
     width: 100%;
     padding: 0 24px;
-`;
+`
 
 
 export const MobileIcon = styled.div`
@@ -56,22 +56,22 @@ export const NavMenu = styled.ul`
     @media screen and (max-width: 760px){
         display: none;
     }
-`;
+`
 
-export const NavLinks = styled(LinkScroll)`
-    height: 80px;
+export const NavLink = styled(LinkScroll)`
     color: #F9F7EF;
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 1.5rem;
-    font-size: 1rem;
+    padding: 0 3rem;
+    font-size: 15px;
     height: 100%;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 
     &:active, &:hover {
         color: #E27D60;
-        border-bottom: 3px solid #E27D60;
+        border-bottom: 5px solid #E27D60;
+        text-decoration: none;
     }
-`;
+`

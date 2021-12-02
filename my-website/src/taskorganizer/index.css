@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.main-container{
+  margin: 50px;
+  border: 2px solid #41B3A3;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: whitesmoke;
+}
+
+h1{
+  margin: 5px 5px 5px 5px;
+  color: #41B3A3;
+  font-size: 30px;
+}
+
+.header{
+  margin: 15px 15px 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-button{
+  margin: 10px 10px 10px 25px;
+  display: inline-block;
+  text-decoration: none;
+  color: #41B3A3;
+  font-weight: lighter;
+  background-image: linear-gradient(to top right, whitesmoke, #41B3A3);
+  padding: 7px;
+  font-size: 14px;
+  border: 1px solid;
+}
+
+.add-button:hover{
+  color: white;
+}
+
+.close-button{
+  margin: 10px 10px 10px 25px;
+  display: inline-block;
+  text-decoration: none;
+  color: #41B3A3;
+  background-color: #F3F3F3; 
+  padding: 7px;
+  font-size: 15px;
+  border: 1px solid #41B3A3; 
+}
+
+.tasks{
+  margin: 10px 5px 20px 5px;
+}
+
+.taskBox{
+  background-color: white;
+  margin: 10px 10px 5px 10px;
+  padding: 1px;
+}
+
+.taskName{
+  margin-left: 10px;
+}
+
+.taskDayTime{
+  margin-left: 10px;
+}
+
+.glyphicon.glyphicon-trash{
+  margin-top: -12px;
+  margin-right: 20px; 
+  float: right;
+  color: #E27D60;
+  cursor: pointer;
+}
+
+.addTaskForm{
+  margin: 0px 20px 20px 20px;
+  border: black;
+  color: white;
+  font-size: 20px;
+}
+
+.btn{
+  background-color: white;
+  color: #41B3A3;
+}
+
+.btn:hover{
+  background-color: #41B3A3;
+  color: white;
+}
