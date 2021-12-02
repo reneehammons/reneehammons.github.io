@@ -15,7 +15,8 @@ function App() {
 
   useEffect(() => {
     if (PerformanceNavigationTiming.type === "nagivate" || "reload" || "back_forward" || "prerender") {
-      sessionStorage.clear();
+      sessionStorage.clear()
+      setTasks([])
     }
   }, [])
 
