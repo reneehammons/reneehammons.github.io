@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import AboutLogo from '../../images/undraw_programmer.svg';
 
 export const AboutContainer = styled.div`
-    height: 700px;
+    height: 850px;
     width: 100%;
     position: relative;
     display: flex; 

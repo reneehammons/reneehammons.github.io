@@ -3,11 +3,12 @@ import { FaTimes } from 'react-icons/fa';
 import { Link as LinkScroll } from 'react-scroll';
 
 export const SidebarContainer = styled.aside`
+    background: #108A69;
+    background: ${({sidebarColorChange}) => (sidebarColorChange ? '#41B3A3': '#108A69')}; 
     position: fixed;
     z-index: 999;
     width: 100%;
     height: 150px;
-    background: #a3d9d5;
     display: grid;
     align-items: center;
     top: 0;

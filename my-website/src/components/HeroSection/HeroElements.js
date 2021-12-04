@@ -8,7 +8,7 @@ export const HeroContainer =styled.div`
 `
 export const HeroBackground = styled.div`
     position: relative;
-    height: 700px;
+    height: 850px;
     overflow: hidden;
     background: url(${desktopImage}) no-repeat center;
     background-size: cover;

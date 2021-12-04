@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {
     SidebarContainer,
     Icon,
@@ -6,64 +6,94 @@ import {
     SidebarMenu,
     SidebarLinks
 } from './SidebarElements';
-import { Link } from "react-scroll";
 
 const Sidebar = ({isOpen, toggle}) => {
+    const [sidebarColor,setSidebarColor] = useState(false);
+
+    const setSidebarColorDark = () =>{
+        setSidebarColor(false)
+        
+    }
+
+    const setSidebarColorLight = () =>{
+        setSidebarColor(true)
+    }
+
+    const scrollSidebarColor = () => {
+        if (window.scrollY >= 1300){
+            setSidebarColor(true)
+        } else {
+            setSidebarColor(false)
+        }
+    }
+
+    useEffect(()=> {
+        window.addEventListener('scroll', scrollSidebarColor)
+    },[]) 
+
     return (
-        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <SidebarContainer 
+            isOpen={isOpen} 
+            onClick={toggle} 
+            sidebarColorChange={sidebarColor} >
             <Icon onClick={toggle}>
                 <CloseIcon></CloseIcon>
             </Icon>
             <SidebarMenu>
-                <SidebarLinks onClick={toggle}>
-                    <Link to="home"
-                        onClick={toggle}
-                        smooth={true} 
-                        duration={500} 
-                        spy={true} 
-                        exact='true' 
-                        offset={-30}
-                    >Home</Link>
+                <SidebarLinks
+                    to="home"
+                    onClick={setSidebarColorDark} 
+                    onClick={toggle}
+                    smooth={true} 
+                    duration={500} 
+                    spy={true} 
+                    exact='true' 
+                    offset={-60}
+                    >Home
                 </SidebarLinks>
-                <SidebarLinks onClick={toggle}>
-                    <Link to="about"
-                        onClick={toggle}
-                        smooth={true} 
-                        duration={500} 
-                        spy={true} 
-                        exact='true' 
-                        offset={-30}
-                    >About</Link>
+                <SidebarLinks 
+                    to="about"
+                    onClick={setSidebarColorDark} 
+                    onClick={toggle}
+                    smooth={true} 
+                    duration={500} 
+                    spy={true} 
+                    exact='true' 
+                    offset={-50} 
+                    >About
                 </SidebarLinks>
-                <SidebarLinks onClick={toggle}>
-                    <Link to="projects"
-                        onClick={toggle}
-                        smooth={true} 
-                        duration={500} 
-                        spy={true} 
-                        exact='true' 
-                        offset={-30}
-                    >Projects</Link>
+                <SidebarLinks 
+                    to="projects"
+                    onClick={setSidebarColorLight} 
+                    onClick={toggle}
+                    smooth={true} 
+                    duration={500} 
+                    spy={true} 
+                    exact='true' 
+                    offset={-60}
+                    >Portfolio
                 </SidebarLinks>
-                <SidebarLinks onClick={toggle}>
-                    <Link to="resume"
-                        onClick={toggle}
-                        smooth={true} 
-                        duration={500} 
-                        spy={true} 
-                        exact='true' 
-                        offset={-30}
-                    >Resume</Link>
+                <SidebarLinks 
+                    to="resume"
+                    onClick={setSidebarColorLight} 
+                    onClick={toggle}
+                    smooth={true} 
+                    duration={500} 
+                    spy={true} 
+                    exact='true' 
+                    offset={-30}
+                    >Resume
                 </SidebarLinks>
-                <SidebarLinks onClick={toggle}>
-                    <Link to="contact"
-                        onClick={toggle}
-                        smooth={true} 
-                        duration={500} 
-                        spy={true} 
-                        exact='true' 
-                        offset={-30}
-                    >Contact</Link>
+                <SidebarLinks 
+                    to="contact"
+                    onClick={setSidebarColorLight} 
+                    onClick={toggle}
+                    smooth={true} 
+                    duration={500} 
+                    spy={true} 
+                    exact='true' 
+                    offset={-30}>
+                    Contact
                 </SidebarLinks>
             </SidebarMenu> 
         </SidebarContainer>

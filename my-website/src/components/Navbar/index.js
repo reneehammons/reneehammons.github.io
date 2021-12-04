@@ -7,7 +7,6 @@ import {
     NavLink
 } from './NavbarElements';
 import { FaBars } from 'react-icons/fa';
-import { Link } from "react-scroll";
 
 
 const NavBar = ({ toggle }) => {
@@ -59,9 +58,9 @@ const NavBar = ({ toggle }) => {
                             duration={500} 
                             spy={true} 
                             exact='true' 
-                            offset={-80}
+                            offset={-60}
                             onClick={setNavColorLight}
-                        >Projects</NavLink>
+                        >Portfolio</NavLink>
                         <NavLink to="resume"
                             smooth={true} 
                             duration={500} 

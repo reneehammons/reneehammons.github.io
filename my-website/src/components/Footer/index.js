@@ -28,7 +28,7 @@ const Footer = () => {
                 </FooterLinksContainer>
                 <FooterBar></FooterBar>
                 <FooterHeader>
-                    Copyright @2021 | Renee Hammons.
+                    Renee Hammons @2021
                 </FooterHeader>
             </FooterWrapper>
         </FooterContainer> 
