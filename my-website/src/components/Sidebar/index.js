@@ -81,7 +81,7 @@ const Sidebar = ({isOpen, toggle}) => {
                     duration={500} 
                     spy={true} 
                     exact='true' 
-                    offset={-30}
+                    offset={-60}
                     >Resume
                 </SidebarLinks>
                 <SidebarLinks 
@@ -92,7 +92,7 @@ const Sidebar = ({isOpen, toggle}) => {
                     duration={500} 
                     spy={true} 
                     exact='true' 
-                    offset={-30}>
+                    offset={-60}>
                     Contact
                 </SidebarLinks>
             </SidebarMenu> 

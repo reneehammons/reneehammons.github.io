@@ -66,7 +66,7 @@ const NavBar = ({ toggle }) => {
                             duration={500} 
                             spy={true} 
                             exact='true' 
-                            offset={-80}
+                            offset={-60}
                             onClick={setNavColorLight}
                         >Resume</NavLink>
                         <NavLink to="contact"
@@ -74,7 +74,7 @@ const NavBar = ({ toggle }) => {
                             duration={500} 
                             spy={true} 
                             exact='true' 
-                            offset={-80}
+                            offset={-60}
                             onClick={setNavColorLight}
                         >Contact</NavLink>
                     </NavMenu>

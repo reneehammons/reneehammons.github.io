@@ -83,12 +83,12 @@ h1{
   font-size: 20px;
 }
 
-.btn{
+.btn-outline-info.btn-block{
   background-color: white;
   color: #41B3A3;
 }
 
-.btn:hover{
+.btn-outline-info.btn-block:hover{
   background-color: #41B3A3;
   color: white;
 }

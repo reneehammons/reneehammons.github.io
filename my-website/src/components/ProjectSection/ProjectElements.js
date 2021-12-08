@@ -19,52 +19,62 @@ export const ProjectWrapperNarrow = styled.div`
 export const ProjectHeader = styled.h1`
     position: absolute;
     text-align: center;
-    font-size: 30px;
+    font-size: 33px;
     color: white;
 
     @media screen and (max-width: 1800px){
         top: 5%;
-        left: 75%;
+        left: 74%;
     } 
 
-    @media screen and (max-width: 1000px ){
+    @media screen and (max-width: 1100px ){
         top: 5%;
-        left: 73%;
+        left: 72%;
     }
 
-
+    @media screen and (max-width: 930px ){
+        top: 5%;
+        left: 70%;
+    }
     @media screen and (max-width: 760px ){
         top: 5%;
-        left: 71%;
+        left: 68%;
     }
 `
 export const Line = styled.hr`
     margin: 10px;
-    width: 170px;
+    width: 220px;
     height: 3px;
     border: none;
     background-color: white;
 `
 export const TaskAppHeader = styled.h3`
     position: absolute;
-    top: 14.5%;
-    left: 72%;
-    font-size: 25px;
+    font-size: 28px;
     color: white;
 
     @media screen and (max-width: 1800px){
         top: 14.5%;
-        left: 75%;
+        left: 72%;
     } 
 
-    @media screen and (max-width: 1000px ){
+    @media screen and (max-width: 1100px ){
+        top: 14.5%;
+        left: 74%;
+    }
+
+    @media screen and (max-width: 930px ){
         top: 14.5%;
         left: 73%;
     }
 
     @media screen and (max-width: 760px ){
         top: 14.5%;
-        left: 71%;
+        left: 72%;
+    }
+
+    @media screen and (max-width: 700px ){
+        //make iphone responsive
     }
 `
 
@@ -89,7 +99,28 @@ export const Arrow = styled.div`
     font-size: 80px;
     color: whitesmoke;
 `
-export const TaskOrganizerList = styled.ul`
-    margin: 10px;
+export const TaskOrganizerNotableFeature = styled.h3`
+    margin: 30px 0px 7px 0px;
     font-size: 20px;
+    color: #E27D60;
+    font-weight: bold;
+`
+export const TaskOrganizerList = styled.ul`
+    margin-top: 5px;
+    font-size: 15px;
+    color: #E27D60;
+    font-weight: bold;
+`
+export const GithubLink = styled.a`
+    margin: 40px 20px 20px 20px;
+    background-color: white;
+    color: #E27D60;
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+
+    &:hover{
+        background-color: #C38D9E;
+        color: white;
+    }
 `

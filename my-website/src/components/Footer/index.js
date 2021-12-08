@@ -18,7 +18,8 @@ const Footer = () => {
             <FooterWrapper>
                 <FooterLinksContainer>
                     <a href="https://www.linkedin.com/in/renee-hammons-3b7652123"
-                        className="linkedin social">
+                        className="linkedin social"
+                        style={{paddingRight: 5}}>
                         <FontAwesomeIcon icon={faLinkedin} size="2x" color="#E27D60"/>
                     </a>
                     <a href="https://github.com/reneehammons"
