@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 .main-container{
-  margin: 110px;
+  margin: 0px;
   border: 2px solid #41B3A3;
 }
 
@@ -17,7 +17,7 @@ h1{
 }
 
 .header{
-  margin: 15px 15px 15px 15px;
+  margin: 15px 15px 0px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,7 +72,7 @@ h1{
   margin-top: -12px;
   margin-right: 20px; 
   float: right;
-  color: #E27D60;
+  color: #108A69;
   cursor: pointer;
 }
 

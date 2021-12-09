@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {
     SidebarContainer,
     Icon,
@@ -8,41 +8,17 @@ import {
 } from './SidebarElements';
 
 const Sidebar = ({isOpen, toggle}) => {
-    const [sidebarColor,setSidebarColor] = useState(false);
-
-    const setSidebarColorDark = () =>{
-        setSidebarColor(false)
-        
-    }
-
-    const setSidebarColorLight = () =>{
-        setSidebarColor(true)
-    }
-
-    const scrollSidebarColor = () => {
-        if (window.scrollY >= 1300){
-            setSidebarColor(true)
-        } else {
-            setSidebarColor(false)
-        }
-    }
-
-    useEffect(()=> {
-        window.addEventListener('scroll', scrollSidebarColor)
-    },[]) 
-
+   
     return (
         <SidebarContainer 
             isOpen={isOpen} 
-            onClick={toggle} 
-            sidebarColorChange={sidebarColor} >
+            onClick={toggle} >
             <Icon onClick={toggle}>
                 <CloseIcon></CloseIcon>
             </Icon>
             <SidebarMenu>
                 <SidebarLinks
                     to="home"
-                    onClick={setSidebarColorDark} 
                     onClick={toggle}
                     smooth={true} 
                     duration={500} 
@@ -53,7 +29,6 @@ const Sidebar = ({isOpen, toggle}) => {
                 </SidebarLinks>
                 <SidebarLinks 
                     to="about"
-                    onClick={setSidebarColorDark} 
                     onClick={toggle}
                     smooth={true} 
                     duration={500} 
@@ -63,8 +38,7 @@ const Sidebar = ({isOpen, toggle}) => {
                     >About
                 </SidebarLinks>
                 <SidebarLinks 
-                    to="projects"
-                    onClick={setSidebarColorLight} 
+                    to="projects" 
                     onClick={toggle}
                     smooth={true} 
                     duration={500} 
@@ -74,8 +48,7 @@ const Sidebar = ({isOpen, toggle}) => {
                     >Portfolio
                 </SidebarLinks>
                 <SidebarLinks 
-                    to="resume"
-                    onClick={setSidebarColorLight} 
+                    to="resume" 
                     onClick={toggle}
                     smooth={true} 
                     duration={500} 
@@ -86,7 +59,6 @@ const Sidebar = ({isOpen, toggle}) => {
                 </SidebarLinks>
                 <SidebarLinks 
                     to="contact"
-                    onClick={setSidebarColorLight} 
                     onClick={toggle}
                     smooth={true} 
                     duration={500} 

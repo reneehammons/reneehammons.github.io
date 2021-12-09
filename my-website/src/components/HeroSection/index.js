@@ -36,7 +36,7 @@ const HeroSection = () => {
                         duration={500}
                         spy={true}
                         exact="true"
-                        offset={-30}>
+                        offset={-60}>
                         View my work {hover ? <ArrowDown /> : <ArrowRight /> }
                     </Button>
                 </HeroBtnWrapper>

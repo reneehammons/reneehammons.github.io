@@ -1,19 +1,12 @@
 import React from 'react';
 import {
     ProjectContainer,
-    ProjectHeader,
-    TaskOrganizerContainer,
-    ProjectWrapperNarrow,
-    ProjectWrapperWide,
-    Arrow,
+    ProjectWrapper,
     TaskAppHeader,
-    TaskOrganizerNotableFeature,
+    TaskOrganizerContainer,
     GithubLink,
-    Line,
-    TaskOrganizerList
 } from './ProjectElements';
 import App from '../../taskorganizer/App';
-import { TiArrowLeftOutline } from 'react-icons/ti';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faGithub
@@ -22,30 +15,18 @@ import {
 const ProjectSection = () => {
     return (
         <ProjectContainer id="projects">
-            <ProjectWrapperWide></ProjectWrapperWide>
-            <ProjectWrapperNarrow></ProjectWrapperNarrow>
-            <ProjectHeader> 
-                Recent Project 
-                <Line></Line>
-            </ProjectHeader>
-            <TaskAppHeader>
-                Try Out My Task Organizer App!
-                <TaskOrganizerNotableFeature> Notable Features: </TaskOrganizerNotableFeature>
-                <TaskOrganizerList> - Built with React </TaskOrganizerList>
-                <TaskOrganizerList> - Displays Inputed Tasks </TaskOrganizerList>
-                <TaskOrganizerList> - Sorts Tasks By Date and Time </TaskOrganizerList>
+            <ProjectWrapper>
+                <TaskAppHeader>
+                    Try Out My Task Organizer App  
+                </TaskAppHeader>
                 <GithubLink 
-                    className="btn btn-outine-info"  
-                    target="_blank"
-                    href="https://github.com/reneehammons/TaskOrganizer" 
-                    role="button" >
-                    View on Github <FontAwesomeIcon icon={faGithub} size="1x" color="#E27D60"/> 
+                    className="btn btn-outine-info"
+                    href="https://github.com/reneehammons/TaskOrganizer"
+                    target="_parent">
+                    View on Github <FontAwesomeIcon icon={faGithub} size="1x" color="#108A69"/>    
                 </GithubLink>
-            </TaskAppHeader>
-            <TaskOrganizerContainer>
-                <App />
-            </TaskOrganizerContainer>
-            <Arrow> <TiArrowLeftOutline></TiArrowLeftOutline> </Arrow>
+            </ProjectWrapper>
+            <TaskOrganizerContainer><App /></TaskOrganizerContainer>
         </ProjectContainer>
     )
 }
