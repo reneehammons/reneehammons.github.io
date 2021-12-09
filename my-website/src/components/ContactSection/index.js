@@ -16,12 +16,12 @@ const ContactSection = () => {
     return (
         <ContactContainer id="contact">
             <ContactContentWrapper>
-                <ContactHeader>Let's Get In Touch</ContactHeader>
+                <ContactHeader>Let's Get In Touch!</ContactHeader>
                 <ContactEmail> reneehammons29@gmail.com </ContactEmail>
                 <ContactLinksContainer>
                     <a href="https://www.linkedin.com/in/renee-hammons-3b7652123"
                         className="linkedin social"
-                        style={{paddingRight: 5}}>
+                        style={{paddingRight: 15}}>
                         <FontAwesomeIcon icon={faLinkedin} size="2x" color="#E27D60"/>
                     </a>
                     <a href="https://github.com/reneehammons"
