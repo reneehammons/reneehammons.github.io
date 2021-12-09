@@ -8,8 +8,8 @@ export const ContactContainer = styled.div`
     text-align: center;
 `
 export const ContactContentWrapper = styled.div`
-    width: 500px;
-    height: 200px;
+    width: 600px;
+    height: 300px;
     display: inline-block;
 
     @media screen and (max-width: 480px){
@@ -29,7 +29,7 @@ export const ContactContentWrapper = styled.div`
     }
 `
 export const ContactHeader = styled.h1`
-    margin: 60px;
+    margin: 160px;
     margin-bottom: 30px;
     position: relative;
     font-size: 30px;
