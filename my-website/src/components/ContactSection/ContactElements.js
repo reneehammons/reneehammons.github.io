@@ -13,19 +13,27 @@ export const ContactContentWrapper = styled.div`
     display: inline-block;
 
     @media screen and (max-width: 480px){
-        transform: translate(-5%, 0%);
-    }
-
-    @media screen and (max-width: 400px){
         transform: translate(-10%, 0%);
     }
 
-    @media screen and (max-width: 370px){
-        transform: translate(-12%, 0%);
+    @media screen and (max-width: 414px){
+        transform: translate(-15%, 0%);
+    }
+
+    @media screen and (max-width: 400px){
+        transform: translate(-17%, 0%);
+    }
+
+    @media screen and (max-width: 375px){
+        transform: translate(-20%, 0%);
     }
 
     @media screen and (max-width: 350px){
-        transform: translate(-15%, 0%);
+        transform: translate(-23%, 0%);
+    }
+
+    @media screen and (max-width: 320px){
+        transform: translate(-25%, 0%);
     }
 `
 export const ContactHeader = styled.h1`
