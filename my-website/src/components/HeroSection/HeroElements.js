@@ -5,6 +5,7 @@ import desktopImage from '../../images/HeroImageDesktop.jpeg';
 
 export const HeroContainer =styled.div`
     background-color: #F9F7EF;
+    width: 100%;
 `
 export const HeroBackground = styled.div`
     position: relative;

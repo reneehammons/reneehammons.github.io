@@ -32,28 +32,74 @@ export const AboutLogoImg = styled.div`
         transform: translate(80%,45%);
     }
 
+    @media screen and (max-width: 940px){
+        width: 320px;
+        height: 320px;
+        transform: translate(80%,55%);
+    }
+
     @media screen and (max-width: 860px){
         width: 300px;
         height: 300px;
-        transform: translate(80%,60%);
+        transform: translate(80%,65%);
     }
 
-    @media screen and (max-width: 720px){
-        width: 280px;
-        height: 280px; 
-        transform: translate(80%,60%);
+    @media screen and (max-width: 800px){
+        width: 260px;
+        height: 260px;
+        transform: translate(75%,83%);
     }
 
-    @media screen and (max-width: 600px){
-        width: 230px;
-        height: 230px;
-        transform: translate(85%,100%);
+    @media screen and (max-width: 740px){
+        width: 240px;
+        height: 240px; 
+        transform: translate(75%,80%);
+    }
+    
+    @media screen and (max-width: 620px){
+        width: 220px;
+        height: 220px; 
+        transform: translate(75%,100%);
+    }
+
+    @media screen and (max-width: 570px){
+        width: 200px;
+        height: 200px;
+        transform: translate(75%,120%);
+    }
+
+    @media screen and (max-width: 530px){
+        width: 180px;
+        height: 180px;
+        transform: translate(83%,140%);
     }
 
     @media screen and (max-width: 490px){
         width: 180px;
         height: 180px;
-        transform: translate(85%,150%);
+        transform: translate(68%,150%);
+    } 
+
+    @media screen and (max-width: 450px){
+        width: 160px;
+        height: 160px;
+        transform: translate(70%,160%);
+    } 
+
+    @media screen and (max-width: 400px){
+        width: 140px;
+        height: 140px;
+        transform: translate(73%,190%);
+    } 
+
+    @media screen and (max-width: 375px){
+        width: 120px;
+        height: 120px;
+        transform: translate(85%,230%);
+    } 
+
+    @media screen and (max-width: 340px){
+        display: none;
     } 
 `
 
@@ -71,12 +117,18 @@ export const AboutContentContainer = styled.div`
         width: 350px;
     }
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 620px){
         width: 300px;
     }
+
     @media screen and (max-width: 490px){
         width: 200px;
     } 
+
+    @media screen and (max-width: 340px){
+        width: 200px;
+        transform: translate(30%,70%);
+    }
 `
 
 export const AboutHeader = styled.h1`
@@ -88,7 +140,6 @@ export const AboutHeader = styled.h1`
     @media screen and (max-width: 860px){
         font-size: 25px;
     }
-
 
     @media screen and (max-width: 760px){
         font-size: 20px;
@@ -114,4 +165,8 @@ export const AboutContent = styled.p`
     @media screen and (max-width: 490px){
         font-size: 14px;
     } 
+
+    @media screen and (max-width: 340px){
+        color: #C38D9E;
+    }
 `

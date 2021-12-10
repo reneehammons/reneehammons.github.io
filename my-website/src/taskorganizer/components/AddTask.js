@@ -83,7 +83,7 @@ const AddTask = ({onAdd}) => {
                 />
             </div>
             <div className="form-group">
-                <label>Date of Task: </label>
+                <label>Due Date: </label>
                 <input 
                     type="date"
                     className="form-control"
@@ -94,7 +94,7 @@ const AddTask = ({onAdd}) => {
                 />
             </div>  
             <div className="form-group">
-                <label>Time of Task: </label>
+                <label>Time Due: </label>
                 <input 
                     type="time"
                     className="form-control" 

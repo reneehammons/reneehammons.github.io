@@ -92,3 +92,36 @@ h1{
   background-color: #41B3A3;
   color: white;
 }
+
+@media screen and (max-width: 450px){
+  .main-container{
+    width: 300px;
+  }
+  h1{
+    font-size: 20px;
+  }
+  .header{
+    margin: 8px 0px 0px 10px; 
+  }
+  .add-button{
+    margin: 0px 10px 0px 0px;
+    padding: 5px;
+    font-size: 10px;
+  }
+  .close-button{
+    margin: 10px 10px 10px 25px;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .addTaskForm{
+    margin: 0px 15px 0px 15px;
+    font-size: 15px;
+  }
+  .taskBox{
+    margin: 0px 10px 0px 10px;
+    padding: 0.5px;
+  }
+  .tasks{
+    margin: 5px 5px 5px 5px;
+  }
+}
