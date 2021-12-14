@@ -9,8 +9,6 @@ const AddTask = ({onAdd}) => {
     const [regularTime, setRegularTime] = useState('')
     const [meridiem, setMeridiem] = useState('')
 
-
-
     const settingTimeStateAndConvertingTime = (e) => {
         //sets initial input to militaryTime state
         setMilitaryTime(e.target.value)
