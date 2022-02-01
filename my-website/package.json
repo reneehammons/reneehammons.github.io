@@ -12,17 +12,19 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.1.3",
+    "chokidar": "^3.5.3",
     "pdfjs-dist": "^2.6.347",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.0.2",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^5.0.0",
     "react-scroll": "^1.8.4",
     "serve": "^13.0.2",
     "styled-components": "^5.3.3",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "webpack-dev-server": "^4.7.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -50,5 +52,8 @@
   },
   "resolutions": {
     "styled-components": "^5"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
   }
 }
