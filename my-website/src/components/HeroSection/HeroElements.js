@@ -19,7 +19,7 @@ export const HeroContent = styled.div`
     color: #F9F7EF; 
     position: absolute;
     text-align: center;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -70%);
     top: 60%;
     left: 50%;
     justify-content: center;
@@ -27,7 +27,7 @@ export const HeroContent = styled.div`
 
 export const HeroHeading = styled.p`
     font-size: 40px;
-    padding: 2px;
+    padding: 0px;
 
     @media screen and (max-width: 760px){
         font-size: 35px; 

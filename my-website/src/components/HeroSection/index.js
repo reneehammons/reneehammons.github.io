@@ -25,8 +25,8 @@ const HeroSection = () => {
                 <HeroHeading>
                     Hello, I'm 
                     <span style={{color: '#E27D60'}}> Renee Hammons. </span>
+                    I'm a front-end engineer.
                 </HeroHeading>
-                <HeroHeading>I'm a front-end engineer.</HeroHeading>
                 <HeroBtnWrapper>
                     <Button 
                         to="projects" 
