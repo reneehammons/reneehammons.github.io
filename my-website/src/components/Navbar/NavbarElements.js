@@ -5,7 +5,6 @@ import { Link as LinkScroll } from 'react-scroll';
 export const Nav = styled.div`
     background: #108A69;
     height: 60px;
-    /* margin-top: -80px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,13 +12,7 @@ export const Nav = styled.div`
     top: 0;
     position: sticky;
     z-index: 10;
-
-    
-   /* @media screen and (max-width: 960px){
-        transition: 0.8s all ease;
-    } */
 `
-//Nav will trigger the transtion at 960px screen size
 
 export const NavbarContainer = styled.div`
     display: flex;
