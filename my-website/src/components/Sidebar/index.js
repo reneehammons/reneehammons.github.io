@@ -34,7 +34,7 @@ const Sidebar = ({isOpen, toggle}) => {
                     duration={500} 
                     spy={true} 
                     exact='true' 
-                    offset={-50} 
+                    offset={-25} 
                     >About
                 </SidebarLinks>
                 <SidebarLinks 

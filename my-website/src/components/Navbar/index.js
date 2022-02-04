@@ -27,7 +27,7 @@ const NavBar = ({ toggle }) => {
                             duration={500} 
                             spy={true} 
                             exact='true' 
-                            offset={-50}
+                            offset={-25}
                         >About</NavLink>
                         <NavLink to="projects"
                             smooth={true} 

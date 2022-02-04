@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
-import {
-    ResumeContainer
-} from "./ResumeElements"
+import { ResumeContainer } from "./ResumeElements"
 import { Viewer } from '@react-pdf-viewer/core'
 import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout'
 import '@react-pdf-viewer/core/lib/styles/index.css'
@@ -16,7 +14,7 @@ const ResumeSection = () => {
 
     return (
         <ResumeContainer id="resume">
-            {defaultPdfFile&&<><Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
+            {defaultPdfFile&&<><Worker workerUrl="https://unpkg.com/pdfjs-dist@2.12.313/build/pdf.worker.min.js">
             <Viewer fileUrl={defaultPdfFile}
             plugins={[defaultLayoutPluginInstance]} />
             </Worker></>}

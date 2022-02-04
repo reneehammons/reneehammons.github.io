@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Task = ({ task, onDelete, onHighlight }) => {
     return (
         <div className='taskBox'>
