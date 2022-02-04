@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { VscArrowSmallRight } from 'react-icons/vsc';
 import { VscArrowSmallDown } from 'react-icons/vsc';
-import desktopImage from '../../images/HeroImageDesktop.jpeg'; 
+import desktopImage from '../../images/HeroImageDesktop.png'; 
 
 export const HeroContainer =styled.div`
     background-color: #F9F7EF;
