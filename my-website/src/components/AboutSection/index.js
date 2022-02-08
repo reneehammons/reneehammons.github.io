@@ -27,7 +27,6 @@ const AboutSection = () => {
                         <AboutContent> I'm looking for a front-end or full-stack position in software engineering, 
                                 either in person or remote. I'm so excited to continue learning more languages, tools, 
                                 and to work on exciting and innovative projects!
-                              
                         </AboutContent>
                 </AboutContentContainer>
             </AboutBoxWide>

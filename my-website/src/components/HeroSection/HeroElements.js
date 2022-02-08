@@ -46,8 +46,8 @@ export const HeroBtnWrapper = styled.div`
 `
 
 export const ArrowRight = styled(VscArrowSmallRight)`
-    transform: translate(0%, 5%);
-    font-size: 2rem;
+    transform: translate(0%, 4%);
+    font-size: 3rem;
 
     @media screen and (max-width: 760px){
         transform: translate(0%, 0%);
@@ -56,7 +56,7 @@ export const ArrowRight = styled(VscArrowSmallRight)`
 
 export const ArrowDown = styled(VscArrowSmallDown)`
     transform: translate(0%, 5%);   
-    font-size: 2rem; 
+    font-size: 3rem; 
     
     @media screen and (max-width: 760px){
         transform: translate(0%, 0%);

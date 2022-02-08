@@ -23,10 +23,10 @@ export const NavbarContainer = styled.div`
     padding: 0 24px;
 `
 
-
 export const MobileIcon = styled.div`
     display: none;
 
+    /* Displays hamburger icon at 760px screen width */
     @media screen and (max-width: 760px){
        display: block;
        position: absolute;
@@ -46,6 +46,7 @@ export const NavMenu = styled.ul`
     margin-top: 12px;
     margin-right: -22px;
 
+    /* Hides Nav menu links at 760px screen width */
     @media screen and (max-width: 760px){
         display: none;
     }

@@ -38,8 +38,9 @@ export const GithubLink = styled.a`
     }
 
     @media screen and (max-width: 390px){
-            transform: translate(0%,290%);
-        }
+         transform: translate(0%,290%);
+    }
+    
     @media screen and (max-width: 330px) {
         transform: translate(0%,290%);
     }

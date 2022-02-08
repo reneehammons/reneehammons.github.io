@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const AddTask = ({onAdd}) => {
     const [id, setId] = useState(Math.floor(Math.random() * 10000) + 1)
     const [text, setText] = useState('')
@@ -79,13 +80,13 @@ const AddTask = ({onAdd}) => {
                     onChange={(e) => setText(e.target.value)}
                     required
                 />
-            </div>
+            </div>  
             <div className="form-group">
                 <label>Due Date: </label>
                 <input 
                     type="date"
                     className="form-control"
-                    placeholder='MM/DD/YYYY'
+                    date-date-format="MM/DD/YYYY"
                     value={date}
                     onChange={settingDateStateAndConvertingDate} 
                     required
@@ -102,7 +103,6 @@ const AddTask = ({onAdd}) => {
                     required
                 />
             </div>
-
             <button type="submit" className= "btn btn-outline-info btn-block">Save Task</button>
         </form>
     )
